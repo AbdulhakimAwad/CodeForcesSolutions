@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class BeautifulMatrix {
+static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		int mat[][]=new int[5][5],i=0,j=0, ans=0;
+		for(i=0;i<=4;i++) {
+			for(j=0;j<=4;j++) {
+				mat[i][j]=in.nextInt();
+				if(mat[i][j]==1) {
+					ans=(Math.abs(i-2)+Math.abs(j-2));
+					break;
+				}//the main condition
+			}
+		}
+			System.out.println(ans);
+	}//end of main
+
+}

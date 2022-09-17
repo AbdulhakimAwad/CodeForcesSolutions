@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class AntonAndDanik {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=in.nextInt(),
+			as=0,ds=0;
+		String g=in.next();
+		for(int i=0;i<n;i++) {
+			if(g.charAt(i)=='A')
+				as++;
+			else
+				ds++;
+		}//end of loop
+		if(as>ds)
+			System.out.println("Anton");
+		else if(ds>as)
+			System.out.println("Danik");
+		else if(as==ds)
+			System.out.println("Friendship");
+	}//end of main
+
+}

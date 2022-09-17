@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class BearAndHisBrother {
+	static Scanner in =new Scanner(System.in); 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=in.nextInt(),b=in.nextInt(),ans=0;
+		while(a<=b) {
+			b*=2;
+			a*=3;
+			ans++;
+		}//end of loop
+		System.out.println(ans);
+	}//end of main
+
+}

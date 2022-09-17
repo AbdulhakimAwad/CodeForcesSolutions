@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class ChatRoom {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1=in.next(),
+				s2="";
+		//[1] remove the wrong chars 
+		for(int i=0;i<s1.length();i++) {
+			if(s1.charAt(i)=='h'||s1.charAt(i)=='e'||
+			   s1.charAt(i)=='l'||s1.charAt(i)=='o'	) {
+				s2+=s1.charAt(i);
+			}
+		}//end of loop
+		
+		
+		//[2] get the correct chars with the correct quantity & the correct sort
+		String h="",e="",l="",o="",s3="";
+		for(int i=0;i<s2.length();i++){
+				if(s2.charAt(i)=='h'&&h.length()<1)
+					h+='h';
+				
+				if(s2.charAt(i)=='e'&&e.length()<1&&h.length()==1)
+					e+='e';
+				
+				if(s2.charAt(i)=='l'&&l.length()<2&&e.length()==1) 
+				l+="l";
+				
+				if(s2.charAt(i)=='o'&&o.length()<1&&l.length()==2)
+					o+='o';
+				
+		}//end of loop
+		//[3] get the final string and test it
+		s3=h+e+l+o;
+
+		//System.out.println(s2);
+		//System.out.println(s3);
+		if(s3.length()==5)
+			System.out.println("YES");
+		else 
+			System.out.println("NO");
+
+	}//end of main
+
+}

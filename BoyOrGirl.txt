@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class BoyOrGirl {
+	static Scanner in = new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String input=in.next();
+		int ans=0,err=1;
+		for(int i=0;i<input.length();i++) {
+			//check if the element not frequenced
+			for(int j=i+1;j<input.length();j++) {
+				//if it frequenced
+				if(input.charAt(i)==input.charAt(j))
+					{
+					err=0;
+					break;
+					}
+			}
+			//if the test complete with successful
+			 if(err==1)
+				ans++;
+		//to repeat the test on all elements	 
+		err=1;	 
+		}
+		if(ans%2==0)
+			System.out.println("CHAT WITH HER!");
+		else
+			System.out.println("IGNORE HIM!");
+	}//end of main
+
+}
