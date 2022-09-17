@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class TheatreSquare 
+{
+	static Scanner in= new Scanner(System.in);
+	public static void main(String args[])
+	{
+		long n=in.nextInt(),
+			m=in.nextInt(),
+			a=in.nextInt();
+		long w=0,l=0;
+		w=n/a;
+		if(n%a>0)
+			w++;
+		l=m/a;
+		if(m%a>0)
+			l++;
+		System.out.println(l*w);
+	}//end of main
+}//end of class
+

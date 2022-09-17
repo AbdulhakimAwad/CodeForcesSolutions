@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class PetyaStrings {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String input1=in.next(),
+		input2=in.next();
+		String c1=input1.toLowerCase(),
+		c2=input2.toLowerCase();
+		int x1=c1.compareTo(c2);
+		
+		
+		
+		if(x1>0)
+			System.out.println(1);
+		else if(x1<0)
+			System.out.println(-1);
+		else if(x1==0)
+			System.out.println(0);
+	}
+
+}

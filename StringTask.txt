@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class StringTask {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String input=in.next(),
+			lowerInput=input.toLowerCase(),
+			ans="";
+			
+		for(int i=0;i<lowerInput.length();i++) {
+			if(		lowerInput.charAt(i)!='a'&&
+					lowerInput.charAt(i)!='y'&&
+					lowerInput.charAt(i)!='o'&&
+					lowerInput.charAt(i)!='e'&&
+					lowerInput.charAt(i)!='i'&&
+					lowerInput.charAt(i)!='u') {
+				ans=ans+'.'+lowerInput.charAt(i);
+			}//end of if
+		}//end of loop
+		System.out.println(ans);
+	}//end of main
+
+}

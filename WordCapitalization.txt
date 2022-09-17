@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class WordCapitalization {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String input=in.next(),up;
+		char ans[]=input.toCharArray();
+		//convert input to UpperCase
+		up=input.toUpperCase();
+		
+		//print the first char as CapitalLetter
+		System.out.print(up.charAt(0));
+		//remove the first char& print the rest of input without changing 
+		for(int i=1;i<input.length();i++) {
+			System.out.print(ans[i]);
+			
+		}//end of loop
+		
+		}//end of main
+
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class StonesOnTheTable {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int l=in.nextInt();
+		String color=in.next();
+		int count=0;
+		//check if the color not equal the next color
+		//we used 'l-1' because in loop we will have an element out of range
+		for(int i=0;i<l-1;i++) {
+			if(color.charAt(i)==color.charAt(i+1)) {
+				count++;
+			}//end of condition
+		}//end of loop
+		System.out.println(count);
+	}//end of main
+
+}

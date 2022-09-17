@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Word {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String input=in.next(),
+			up=input.toUpperCase(),
+			low=input.toLowerCase();
+		int upper=0,lower=0;
+		for(int i=0;i<input.length();i++) {
+			if(input.charAt(i)==up.charAt(i))
+				upper++;
+			else if(input.charAt(i)==low.charAt(i))
+				lower++;
+		}//end of loop
+			if(upper>lower)
+				System.out.println(up);
+			else if(lower>=upper)
+				System.out.println(low);
+	}//end of main
+
+}

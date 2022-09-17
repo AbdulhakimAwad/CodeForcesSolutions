@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Football {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s=in.next();
+		int ones=0,zeroes=0;
+		for(int i=0;i<=s.length()-1;i++) {
+			//compute zeroes
+			if(s.charAt(i)=='0'&&ones<7) {
+				ones=0;
+				zeroes++;
+			}
+			//compute ones 
+			else if(s.charAt(i)=='1'&&zeroes<7) {
+				zeroes=0;
+				ones++;
+			}
+		}//end of loop
+		//the main conditions to get solution
+		if(ones<7&&zeroes<7)
+			System.out.println("NO");
+		else if(ones>=7||zeroes>=7)
+			System.out.println("YES");
+
+	}//end of main
+	
+}

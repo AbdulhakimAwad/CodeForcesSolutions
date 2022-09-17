@@ -1,0 +1,18 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Tram {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int s=in.nextInt(),sum=0;
+		int []arr=new int[s];
+		for(int i=0;i<s;i++) {
+			int out=in.nextInt(), inn=in.nextInt();
+			sum=(sum-out)+inn;
+			arr[i]=sum;
+		}//end of loop
+		Arrays.sort(arr);
+		System.out.println(arr[s-1]);
+	}//end of main
+
+}

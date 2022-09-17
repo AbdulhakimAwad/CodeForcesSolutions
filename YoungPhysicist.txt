@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class YoungPhysicist {
+	static Scanner in=new Scanner(System.in); 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=in.nextInt(),
+			x,y,z,sumx=0,sumy=0,sumz=0;
+		for(int i=0;i<n;i++) {
+			//get x,y,z of vectors 
+			x=in.nextInt();
+			y=in.nextInt();
+			z=in.nextInt();
+			
+			//get the sum 
+			sumx=sumx+x;
+			sumy=sumy+y;
+			sumz=sumz+z;
+		}
+		if(sumx==0&&sumy==0&&sumz==0)
+			System.out.println("YES");
+		else
+			System.out.println("NO");
+	}//end of main
+
+}

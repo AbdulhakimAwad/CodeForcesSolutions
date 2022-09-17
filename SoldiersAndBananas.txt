@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class SoldiersAndBananas {
+	static Scanner in = new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int c=in.nextInt(),
+			d=in.nextInt(),
+			t=in.nextInt(),
+			k=c;
+		while(t!=0) {
+			//at the moment of buying
+			d=d-k;
+			
+			//after buying
+			k=k+c;
+			t-=1;
+		}//end of loop
+		if(d<0)
+			System.out.println(-d);
+		else
+			System.out.println(0);
+	}//end of main
+
+}

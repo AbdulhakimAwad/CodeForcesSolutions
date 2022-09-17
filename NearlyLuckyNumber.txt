@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class NearlyLuckyNumber {
+	static Scanner in = new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String num=in.next();
+		long l=0;
+		for(int i=0;i<num.length();i++) {
+			if(num.charAt(i)=='4'||num.charAt(i)=='7')
+				l++;
+		}
+		 if(l==7||l==4||l==num.length())
+			System.out.println("YES");
+		else
+			System.out.println("NO");
+	
+	}//END OF MAIN
+
+}

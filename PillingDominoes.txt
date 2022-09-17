@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class PillingDominoes {
+	static Scanner in=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int m=in.nextInt(),
+			n=in.nextInt();
+		System.out.println((m*n)/2);
+
+	}
+
+}
